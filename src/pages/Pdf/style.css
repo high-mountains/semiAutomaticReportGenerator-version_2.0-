@@ -1,0 +1,176 @@
+html {
+    font-size: calc(100vw / 593);
+    box-sizing: border-box;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.pdfwrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;
+}
+
+@media only screen and (min-width: 594px) {
+    html {
+        font-size: 1px;
+    }
+
+    .pdfcontainer {
+      width: 100vw;
+    }
+
+    .page {
+        width: 595rem;
+        height: 847rem;
+        border-radius: 2rem;
+    }
+
+    .font {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 593px) {
+    html {
+        font-size: calc(100vw / 593);
+    }
+
+    .page {
+        font-size: 16rem;
+        width: 100vw;
+        height: 847rem;
+        border: 1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+table.supplement {
+    color: #34495E;
+    line-height: 1.4477;
+}
+
+table.supplement, table.supplement th, table.supplement td {
+    border: 1px solid #C5C5C5
+}
+
+table.supplement th:nth-child(1) {
+    width: 155rem;
+}
+
+table.supplement th:nth-child(2) {
+    width: 50rem;
+    text-align: center;
+}
+
+table.supplement th:nth-child(3) {
+    width: 65rem;
+    text-align: center;
+}
+table.supplement th:nth-child(4) {
+    width: 185rem;
+}
+
+table.supplement th:nth-child(5) {
+    width: 80rem;
+}
+
+table.supplement th {
+    font-size: 10rem;
+    line-height: 1.448;
+    font-weight: 400;
+    height: 30rem;
+    background-color: #f8f8f8;
+}
+
+table.supplement td {
+    padding-left: 3.25rem;
+    padding-right: 3.25rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+table.supplement td:nth-last-child(5) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+table.supplement td:nth-last-child(4) {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+table tr {
+    height: 30rem;
+}
+
+table.geneInfo {
+    text-align: center;
+    line-height: 1.4483;
+}
+table.geneInfo, table.geneInfo th, table.geneInfo td {
+    border: 1px solid #C5C5C5;
+}
+
+table.geneInfo th, table.geneInfo td {
+    width: 33.33%;
+}
+
+table.geneInfo th {
+    background-color: #f8f8f8;
+    font-weight: 400;
+    padding: 5.9rem 10rem;
+}
+
+table.geneInfo td {
+    padding: 8.4rem 0rem;
+}
+
+.blue {
+    color: #007AFF;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+span.dots {
+    position: relative;
+    height: 2rem; /* Height of the line */
+    margin-left: 20rem 0; /* Margin for spacing */
+    margin-right: 15rem 0; /* Margin for spacing */
+    overflow: hidden; /* Hide overflow */
+}
+
+span.dots::before {
+    content: '';
+    position: absolute;
+    height: 2rem; /* Height of the line */
+    width: 100%; /* Full width */
+    background: repeating-linear-gradient(
+        to right,
+        #000000,
+        #000000 2.5rem, /* Dot width */
+        transparent 5rem,
+        transparent 15rem /* Gap width */
+    );
+    margin: 20rem, 0rem
+}
+
+#file {
+    display: none;
+}
+
+.custom-file-label {
+    background-color: #00c3d0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5rem;
+    font-size: 16rem;
+    text-align: center;
+    padding: 8rem;
+}
+
+.custom-file-label:hover {
+    background-color: #ffffff;
+    color: #00c3d0;
+}
